@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled } from 'styled-components';
-import Path from '../components/path';
+import Path from '../components/Path';
 
 const SectionPaths = () => {
   return (
