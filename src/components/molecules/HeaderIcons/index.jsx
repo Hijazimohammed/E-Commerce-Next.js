@@ -1,15 +1,26 @@
 import HeaderIconDiv from '@/components/atoms/HeaderIconDiv';
 import { headerIconsData } from '@/mock/data';
-import { Flex } from '@/styles/customStyle';
+import { styled } from 'styled-components';
 
 const HeaderIcons = () => {
   return (
-    <Flex gap='2rem'>
+    <HeaderIconsItem>
       {headerIconsData.map((data) => (
         <HeaderIconDiv key={data.title} icon={data.icon} title={data.title} />
       ))}
-    </Flex>
+    </HeaderIconsItem>
   );
 };
+
+const HeaderIconsItem = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+`;
 
 export default HeaderIcons;

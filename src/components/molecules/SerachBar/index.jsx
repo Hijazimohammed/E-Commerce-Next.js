@@ -19,4 +19,8 @@ export default SearchBar;
 const HeaderSearchBar = styled.div`
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 `;

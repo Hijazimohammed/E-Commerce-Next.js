@@ -3,6 +3,8 @@ import { salaryFormat } from '@/utils';
 export const logo = '/logo.png';
 export const targetDate = '2024-09-01T23:59:59';
 export const images = {
+  mobileCart: '/cart-mobile.png',
+  mobileProfile: '/profile-moblie.png',
   burgerIcon: '/Vector2.png',
   dropIcon: '/Vector.png',
   dropTop: '/Vector3.png',

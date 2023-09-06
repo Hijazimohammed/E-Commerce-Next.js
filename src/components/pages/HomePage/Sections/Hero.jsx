@@ -80,7 +80,11 @@ const HeroSection = styled.section`
     }
   }
 `;
-const HeroContainer = styled.div``;
+const HeroContainer = styled.div`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
 const HeroMenu = styled.ul`
   display: flex;
   flex-direction: column;
