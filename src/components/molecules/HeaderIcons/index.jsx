@@ -6,7 +6,12 @@ const HeaderIcons = () => {
   return (
     <HeaderIconsItem>
       {headerIconsData.map((data) => (
-        <HeaderIconDiv key={data.title} icon={data.icon} title={data.title} />
+        <HeaderIconDiv
+          key={data.title}
+          link={data.link}
+          icon={data.icon}
+          title={data.title}
+        />
       ))}
     </HeaderIconsItem>
   );

@@ -79,18 +79,22 @@ export const shipSelect = [
 ];
 export const headerIconsData = [
   {
+    link: '/',
     title: 'Profile',
     icon: '/profile.png',
   },
   {
+    link: '/',
     title: 'Message',
     icon: '/message.png',
   },
   {
+    link: 'products',
     title: 'Orders',
     icon: '/order.png',
   },
   {
+    link: '/cart',
     title: 'cart',
     icon: '/cart.png',
   },

@@ -5,12 +5,12 @@ import { categoriesSelect } from '@/mock/data';
 import React from 'react';
 import { styled } from 'styled-components';
 
-const SearchBar = () => {
+const SearchBar = ({ showSearch }) => {
   return (
     <HeaderSearchBar>
-      <Input placeholder='Search' width='400px' />
-      <Select options={categoriesSelect} border='true' />
-      <Button>Search</Button>
+      {showSearch && <Input placeholder='Search' width='400px' />}
+      {showSearch && <Select options={categoriesSelect} border='true' />}
+      {showSearch && <Button>Search</Button>}
     </HeaderSearchBar>
   );
 };
@@ -21,6 +21,14 @@ const HeaderSearchBar = styled.div`
   align-items: center;
 
   @media screen and (max-width: 1200px) {
-    display: none;
+    input {
+      display: none;
+    }
+    select {
+      display: none;
+    }
+    button {
+      display: none;
+    }
   }
 `;

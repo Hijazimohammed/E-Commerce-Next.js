@@ -65,8 +65,6 @@ const Login = () => {
           </Typography>
         </div>
       </form>
-
-      <AuthForm />
     </FormSection>
   );
 };

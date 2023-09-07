@@ -1,11 +1,14 @@
+import Link from 'next/link';
 import React from 'react';
 import { styled } from 'styled-components';
 
-const HeaderIconDiv = ({ icon, title }) => {
+const HeaderIconDiv = ({ icon, title, link }) => {
   return (
     <Div>
-      <Icon src={icon} />
-      <Span>{title}</Span>
+      <Link href={link}>
+        <Icon src={icon} />
+        <Span>{title}</Span>
+      </Link>
     </Div>
   );
 };
@@ -17,6 +20,12 @@ const Div = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 const Icon = styled.img`
   width: 24px;

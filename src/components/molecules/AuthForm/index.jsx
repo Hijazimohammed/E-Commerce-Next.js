@@ -33,8 +33,7 @@ const Container = styled.footer`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 7%;
-  position: absolute;
-  bottom: 0;
+  margin: auto 0;
   background-color: ${(props) => props.theme.pallet.base_white};
 
   .links {

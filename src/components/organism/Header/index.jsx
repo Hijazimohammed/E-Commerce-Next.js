@@ -21,7 +21,7 @@ const Header = ({ showSearch = true }) => {
             </MobileIcons>
           </MobileLogoContainer>
 
-          {showSearch && <SearchBar />}
+          <SearchBar showSearch={showSearch} />
           <HeaderIcons />
         </HeaderContainer>
       </Container>
